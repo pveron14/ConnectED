@@ -1,0 +1,205 @@
+/*Mobile and Desktop*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    flex-wrap: wrap;
+    color: #8190A5;
+    font-size: 18px;
+}
+/*navbar*/
+header{
+    width: 100%;
+    height: auto;
+    background-color: #209CEE
+}
+header #menu{
+    top: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo nav";
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar-logo{
+    grid-area: logo;
+}
+#menu ul{
+    list-style: none;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: flex-end;
+    grid-area: nav;
+}
+#menu ul li{
+    display: block;
+}
+#menu ul li a{
+    color: black;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    display: block;
+    padding: 10px;
+    border-radius: 1cm;
+    border: 5px
+}
+#menu ul li a:hover{    
+    background-color: #42b881;
+}
+/*Texto Header*/
+header #home
+{
+   margin: 5%;
+}
+#home .header__titulo{
+    font-size: 48px;
+    font: solid;
+}
+#home .header__intro
+{
+    color: #343F4B;
+}
+/*Seccion principal del Index*/
+.imagen1{
+    width: 293px;
+    height: 305.95px;
+}
+.imagen2{
+    width: 449.95px;
+    height: 305.95px;
+}
+#main .texto1,.texto2{
+    text-align: center;
+    padding: 3rem;
+}
+/*pie de pagina*/
+footer{
+    background-color: #47525E;
+    padding: 3rem;
+    margin-top: auto;
+    bottom: 0%;
+}
+.seccion-footer{
+    flex-direction: column;
+    justify-content: space-between;
+    border: oldlace;
+}
+.seccion-footer ul li{
+    text-decoration: none;
+    display: block;
+}
+/**/
+/*Sobre Nosotros*/
+#main-presentacion{
+    text-align: center;
+    padding: 3em;
+}
+.texto-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.video-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: 480px;
+}
+/**/
+/*Mobile Tablets*/
+@media screen and (min-width: 768px){
+    header #menu{
+        top: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .navbar-logo{
+        margin-left: 23%;
+    }
+    #menu ul li{
+        display: inline-block;
+    }
+
+
+}   
+/*Desktop*/
+@media screen and (min-width: 1024px){
+    header #menu{
+        top: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .navbar-logo{
+        margin-left: 5%;
+    }
+    #menu ul li{
+        display: inline-block;
+    }
+    /*Seccion principal del Index*/
+    #main{
+        display: grid;
+        grid-template-areas: 
+        "grilla1 imagen1"
+        "grilla2 imagen2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .grilla1{
+        grid-area: grilla1;
+    }
+    .grilla2{
+        grid-area: grilla2;
+    }
+    .imagen1{
+        width: 293px;
+        height: 305.95px;
+        top: 0%;
+    }
+    .imagen2{
+        width: 449.95px;
+        height: 305.95px;
+        top: 0%;
+    }
+    /*pie de pagina*/
+    .titulo__footer{
+    display: flex;
+    display: inline-block;
+    }
+    footer ul{
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    align-content: flex-end;
+    }
+    /*Sobre Nosotros*/
+    #main-presentacion{
+        display: grid;
+        grid-template-areas: "texto-presentacion  video-presentacion";
+        grid-template-columns: 50% 50%;
+    }
+    .texto-presentacion{
+        grid-area: texto-presentacion;
+    }
+    .video-presentacion{
+        grid-area: video-presentacion;
+    }
+}
