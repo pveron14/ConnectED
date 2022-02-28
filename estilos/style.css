@@ -15,54 +15,19 @@ p{
     font-size: 18px;
 }
 /*navbar*/
+.nav-background-color{
+
+}
 header{
     width: 100%;
     height: auto;
-    background-color: #209CEE
-}
-header #menu{
-    top: 0%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "logo nav";
-    align-content: space-between;
-    flex-wrap: wrap;
-}
-.navbar-logo{
-    grid-area: logo;
-}
-#menu ul{
-    list-style: none;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: flex-end;
-    grid-area: nav;
-}
-#menu ul li{
-    display: block;
-}
-#menu ul li a{
-    color: black;
-    background-color: white;
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    margin: 5px;
-    display: block;
-    padding: 10px;
-    border-radius: 1cm;
-    border: 5px
-}
-#menu ul li a:hover{    
-    background-color: #42b881;
+    background-image: linear-gradient(#209CEE,whitesmoke)
 }
 /*Texto Header*/
 header #home
 {
-   margin: 5%;
+   padding: 5%;
+   text-align: center;
 }
 #home .header__titulo{
     font-size: 48px;
@@ -73,18 +38,7 @@ header #home
     color: #343F4B;
 }
 /*Seccion principal del Index*/
-.imagen1{
-    width: 293px;
-    height: 305.95px;
-}
-.imagen2{
-    width: 449.95px;
-    height: 305.95px;
-}
-#main .texto1,.texto2{
-    text-align: center;
-    padding: 3rem;
-}
+
 /*pie de pagina*/
 footer{
     background-color: #47525E;
@@ -155,30 +109,7 @@ footer{
         display: inline-block;
     }
     /*Seccion principal del Index*/
-    #main{
-        display: grid;
-        grid-template-areas: 
-        "grilla1 imagen1"
-        "grilla2 imagen2";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-    }
-    .grilla1{
-        grid-area: grilla1;
-    }
-    .grilla2{
-        grid-area: grilla2;
-    }
-    .imagen1{
-        width: 293px;
-        height: 305.95px;
-        top: 0%;
-    }
-    .imagen2{
-        width: 449.95px;
-        height: 305.95px;
-        top: 0%;
-    }
+    
     /*pie de pagina*/
     .titulo__footer{
     display: flex;
