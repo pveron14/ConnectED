@@ -15,9 +15,7 @@ p{
     font-size: 18px;
 }
 /*navbar*/
-.nav-background-color{
 
-}
 header{
     width: 100%;
     height: auto;
@@ -57,21 +55,24 @@ footer{
 }
 /**/
 /*Sobre Nosotros*/
-#main-presentacion{
-    text-align: center;
-    padding: 3em;
+#videito{
+    width: 100%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
 }
-.texto-presentacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+#login-box{
+    width: 60%;
+    margin: 10% auto;    
 }
-.video-presentacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 480px;
-    height: 480px;
+#signIn-box{
+    width: 60%;
+    margin: 10% auto;
+}
+#contact-box{
+    width: 60%;
+    margin: 10% auto;
 }
 /**/
 /*Mobile Tablets*/
@@ -122,15 +123,5 @@ footer{
     align-content: flex-end;
     }
     /*Sobre Nosotros*/
-    #main-presentacion{
-        display: grid;
-        grid-template-areas: "texto-presentacion  video-presentacion";
-        grid-template-columns: 50% 50%;
-    }
-    .texto-presentacion{
-        grid-area: texto-presentacion;
-    }
-    .video-presentacion{
-        grid-area: video-presentacion;
-    }
+    
 }
