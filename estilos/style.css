@@ -36,23 +36,47 @@ header #home
     color: #343F4B;
 }
 /*Seccion principal del Index*/
-
+.learning-content{
+    max-width: 50%;
+    margin: 0 auto;
+}
 /*pie de pagina*/
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+footer .footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+footer .blocs {
+    width: 20%;
+    display: inline-block;
+    padding: 100px 0 90px;
+    vertical-align: top;
+    text-align: center;
+}
+.footer .list {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer .title{
+        color: white;
+}
+footer .list-group-item{
+    background-color: #47525E;
+    color: white;
+}
 footer{
     background-color: #47525E;
-    padding: 3rem;
-    margin-top: auto;
-    bottom: 0%;
 }
-.seccion-footer{
-    flex-direction: column;
-    justify-content: space-between;
-    border: oldlace;
-}
-.seccion-footer ul li{
-    text-decoration: none;
-    display: block;
-}
+
+
 /**/
 /*Sobre Nosotros*/
 #videito{
@@ -112,16 +136,7 @@ footer{
     /*Seccion principal del Index*/
     
     /*pie de pagina*/
-    .titulo__footer{
-    display: flex;
-    display: inline-block;
-    }
-    footer ul{
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    align-content: flex-end;
-    }
+    
     /*Sobre Nosotros*/
     
 }
