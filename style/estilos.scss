@@ -1,0 +1,142 @@
+/*Mobile and Desktop*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    flex-wrap: wrap;
+    color: #8190A5;
+    font-size: 18px;
+}
+/*navbar*/
+
+header{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(#209CEE,whitesmoke)
+}
+/*Texto Header*/
+header #home
+{
+   padding: 5%;
+   text-align: center;
+}
+#home .header__titulo{
+    font-size: 48px;
+    font: solid;
+}
+#home .header__intro
+{
+    color: #343F4B;
+}
+/*Seccion principal del Index*/
+.learning-content{
+    max-width: 50%;
+    margin: 0 auto;
+}
+/*pie de pagina*/
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+footer .footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+footer .blocs {
+    width: 20%;
+    display: inline-block;
+    padding: 100px 0 90px;
+    vertical-align: top;
+    text-align: center;
+}
+.footer .list {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer .title{
+        color: white;
+}
+footer .list-group-item{
+    background-color: #47525E;
+    color: white;
+}
+footer{
+    background-color: #47525E;
+}
+
+
+/**/
+/*Sobre Nosotros*/
+#videito{
+    width: 100%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+}
+
+#login-box{
+    width: 60%;
+    margin: 10% auto;    
+}
+#signIn-box{
+    width: 60%;
+    margin: 10% auto;
+}
+#contact-box{
+    width: 60%;
+    margin: 10% auto;
+}
+/**/
+/*Mobile Tablets*/
+@media screen and (min-width: 768px){
+    header #menu{
+        top: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .navbar-logo{
+        margin-left: 23%;
+    }
+    #menu ul li{
+        display: inline-block;
+    }
+
+
+}   
+/*Desktop*/
+@media screen and (min-width: 1024px){
+    header #menu{
+        top: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .navbar-logo{
+        margin-left: 5%;
+    }
+    #menu ul li{
+        display: inline-block;
+    }
+    /*Seccion principal del Index*/
+    
+    /*pie de pagina*/
+    
+    /*Sobre Nosotros*/
+    
+}
