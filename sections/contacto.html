@@ -104,42 +104,44 @@
     </nav>
 </header>
 
-<form class="text-center border border-light p-5" action="#!">
+<section class="w-100 bg-image" style="background-image: url(../imagenes/mr-bochelly-IBKyH0V3rew-unsplash.jpg);">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div data-aos="flip-up" class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Contáctanos</h3>
+              <form>
+  
+                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+  
+                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-    <p class="h4 mb-4">Contact us</p>
-
-    <!-- Name -->
-    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-
-    <!-- Email -->
-    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-    <!-- Subject -->
-    <label>Subject</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled>Choose option</option>
-        <option value="1" selected>Feedback</option>
-        <option value="2">Report a bug</option>
-        <option value="3">Feature request</option>
-        <option value="4">Feature request</option>
-    </select>
-
-    <!-- Message -->
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+  
+                <label>Subject</label>
+                <select class="browser-default custom-select mb-4">
+                    <option value="" disabled>Choose option</option>
+                    <option value="1" selected>Feedback</option>
+                    <option value="2">Report a bug</option>
+                    <option value="3">Feature request</option>
+                    <option value="4">Feature request</option>
+                </select>
+  
+                <div class="form-group">
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                </div>
+  
+                <div class="mt-4 pt-2">
+                  <input class="btn btn-primary btn-lg" type="submit" value="Enviar"/>
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Copy -->
-    <div class="custom-control custom-checkbox mb-4">
-        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-    </div>
-
-    <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Send</button>
-
-</form>
-<!-- Default form contact -->
+</section>
 
 <footer>
     
