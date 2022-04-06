@@ -1,0 +1,31 @@
+/*pie de pagina*/
+footer{
+    background-color: #47525E;
+    .title{
+        color: white;
+    .list-group-item{
+        background-color: #47525E;
+        color: white;
+    .list {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    .blocs {
+        width: 20%;
+        display: inline-block;
+        padding: 100px 0 90px;
+        vertical-align: top;
+        text-align: center;
+    .footer-links{
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid black;
+    }   
+    }
+    }
+    }
+    }
+}
